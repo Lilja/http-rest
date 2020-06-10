@@ -16,4 +16,8 @@ RUN apt-get update && apt-get -y install ca-certificates libssl-dev && rm -rf /v
 
 COPY --from=build /build-out/http-rest /
 
+ENV ROCKET_PORT 8000
+
+EXPOSE 8000
+
 CMD /http-rest
