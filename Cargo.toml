@@ -1,0 +1,9 @@
+[package]
+name = "http-rest"
+version = "0.1.0"
+authors = ["Erik Lilja <erikvlilja@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.5"
+reqwest = { version = "0.10", features = ["blocking", "json"] }
