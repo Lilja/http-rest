@@ -1,4 +1,4 @@
-FROM rust:nightly-slim as build
+FROM rustlang/rust:nightly as build
 
 COPY ./ ./
 
